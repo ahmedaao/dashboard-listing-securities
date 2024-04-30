@@ -1,2 +1,41 @@
-"Order n°", "Security", "Name", "Id", "Broker", "Date", "Order type", "Amount"
-
+"Order n°", "Isin", "Broker", "Account", "Date", "Order type", "Quantity", "Unit price"
+1, "LU0131510165", "BourseDirect", "PEA","01/02/2024", "Buy", 1, 728.74
+2, "LU0131510165", "BourseDirect", "PEA","04/03/2024", "Buy", 1, 745.87
+3, "LU0131510165", "BourseDirect", "PEA","05/04/2024", "Buy", 1, 785.92
+4, "LU1964632324", "BourseDirect", "PEA","", "Buy", 1, # A completer
+5, "LU1832174962", "BourseDirect", "PEA-PME", "01/02/2024", "Buy", 5, 143.89
+6, "LU1832174962", "BourseDirect", "PEA-PME", "05/03/2024", "Buy", 5, 146.62
+7, "LU1832174962", "BourseDirect", "PEA-PME", "05/04/2024", "Buy", 4, 153.87
+8, "LU1832175001", "BourseDirect", "PEA-PME", "09/04/2024", "Buy", 1, 159.32
+9, "US0846707026", "TradeRepublic", "Investment account", "16/11/2023", "Buy", 0.7562, 330.60
+10, "US0846707026", "TradeRepublic", "Investment account", "04/12/2023", "Buy", 0.76034, 328.80
+11, "US0846707026", "TradeRepublic", "Investment account", "18/12/2023", "Buy", 0.608642, 328.60
+12, "US0846707026", "TradeRepublic", "Investment account", "27/12/2023", "Buy", 0.62189, 321.60
+13, "US0846707026", "TradeRepublic", "Investment account", "02/01/2024", "Buy", 0.612745, 326.40
+14, "US0846707026", "TradeRepublic", "Investment account", "09/01/2024", "Buy", 0.898203, 334.00
+15, "US0846707026", "TradeRepublic", "Investment account", "16/01/2024", "Buy", 0.90036, 333.20
+16, "US0846707026", "TradeRepublic", "Investment account", "23/01/2024", "Buy", 0.882872, 339.80
+17, "US0846707026", "TradeRepublic", "Investment account", "02/02/2024", "Buy", 0.835654, 359.00
+18, "US5705351048", "TradeRepublic", "Investment account", "02/02/2024", "Buy", 0.11355, 1321.00
+19, "US0846707026", "TradeRepublic", "Investment account", "09/02/2024", "Buy", 0.813449, 368.80
+20, "US5705351048", "TradeRepublic", "Investment account", "09/02/2024", "Buy", 0.114068, 1315.00
+21, "US0846707026", "TradeRepublic", "Investment account", "16/02/2024", "Buy", 0.798296, 375.80
+22, "US5705351048", "TradeRepublic", "Investment account", "16/02/2024", "Buy", 0.10909, 1375.00
+23, "US0846707026", "TradeRepublic", "Investment account", "23/02/2024", "Buy", 0.772797, 388.20
+24, "US5705351048", "TradeRepublic", "Investment account", "23/02/2024", "Buy", 0.109409, 1371.00
+25, "US0846707026", "TradeRepublic", "Investment account", "04/03/2024", "Buy", 0.806885, 371.80
+26, "US5705351048", "TradeRepublic", "Investment account", "04/03/2024", "Buy", 0.109011, 1376.00
+27, "US0846707026", "TradeRepublic", "Investment account", "11/03/2024", "Buy", 0.81081, 370.00
+28, "US5705351048", "TradeRepublic", "Investment account", "11/03/2024", "Buy", 0.109489, 1370.00
+29, "US0846707026", "TradeRepublic", "Investment account", "18/03/2024", "Buy", 0.799573, 375.20
+30, "US5705351048", "TradeRepublic", "Investment account", "18/03/2024", "Buy", 0.107142, 1400.00
+31, "US0846707026", "TradeRepublic", "Investment account", "25/03/2024", "Buy", 0.792811, 378.40
+32, "US5705351048", "TradeRepublic", "Investment account", "25/03/2024", "Buy", 0.106307, 1411.00
+33, "US0846707026", "TradeRepublic", "Investment account", "02/04/2024", "Buy", 0.770218, 389.50
+34, "US5705351048", "TradeRepublic", "Investment account", "02/04/2024", "Buy", 0.10699, 1402.00
+35, "US0846707026", "TradeRepublic", "Investment account", "09/04/2024", "Buy", 0.783903, 382.70
+36, "US5705351048", "TradeRepublic", "Investment account", "09/04/2024", "Buy", 0.109489, 1370.00
+37, "US0846707026", "TradeRepublic", "Investment account", "16/04/2024", "Buy", 0.799147, 375.40
+38, "US5705351048", "TradeRepublic", "Investment account", "16/04/2024", "Buy", 0.111607, 1344.00
+39, "US0846707026", "TradeRepublic", "Investment account", "23/04/2024", "Buy", 0.786885, 381.25
+40, "US5705351048", "TradeRepublic", "Investment account", "23/04/2024", "Buy", 0.108459, 1383.00
