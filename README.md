@@ -11,10 +11,12 @@ This project is inspired by this video tutorial:
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Methods](#methods)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
+2. [Stack Used](#stack-used)
+3. [Architecture](#architecture)
+4. [Methods](#methods)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ## Introduction
 
@@ -27,8 +29,11 @@ This project was built using the following technologies:
 1. Frontend:
     - Streamlit
 
-2. Backend:
+2. Middleware:
     - FastAPI
+
+3. Backend:
+    - csv # TODO: Update with a database server
 
 3. Other tools:
     - Git
