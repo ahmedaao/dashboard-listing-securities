@@ -1,6 +1,6 @@
 # Dashboard Listing Securities
 
-![Author](https://img.shields.io/badge/Author-Ahmed%20Ait-Ouazzou-brightgreen)
+[![Author](https://img.shields.io/badge/Author-Ahmed%20Ait-Ouazzou-brightgreen)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow%20Me-lightgrey)](https://github.com/ahmedaao)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Me-informational)](https://www.linkedin.com/in/ahmed-ait-ouazzou/)
 
