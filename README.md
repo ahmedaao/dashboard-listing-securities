@@ -13,6 +13,7 @@ This project is inspired by this video tutorial:
 1. [Introduction](#introduction)
 2. [Stack Used](#stack-used)
 3. [Architecture](#architecture)
+4. [Features](#features)
 4. [Methods](#methods)
 5. [Usage](#usage)
 6. [Contributing](#contributing)
@@ -39,6 +40,16 @@ This project was built using the following technologies:
     - Git
     - GitHub
     - Visual Studio
+
+## Architecture
+
+## Features
+
+1. Compute risk-adjusted return:
+    - Sharpe ratio
+    -
+
+2.
 
 ## Methods
 
