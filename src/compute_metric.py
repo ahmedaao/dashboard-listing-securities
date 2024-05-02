@@ -1,14 +1,15 @@
-# Import packages
+"""Module containing metrics to compute"""
+
 from typing import List
 import numpy as np
-import pandas as pd
+from src.compute_function import rolling_variation
 
 
-def beta(security_returns: List[float], benchmark_returns: List[float]) -> dict:
+def beta(security_returns: List[float], benchmark_returns: List[float]):
     """
     Calculate the beta of a security relative to a benchmark.
     You can find the source here: Source: https://www.wallstreetmojo.com/beta-coefficient-calculate/
-    Benchmark can be a portfolio return or a index return
+    Benchmark can be a portfolio of security returns or a index return
 
     Args:
         security_returns (List[float]): List of security returns.
@@ -17,22 +18,20 @@ def beta(security_returns: List[float], benchmark_returns: List[float]) -> dict:
     Returns:
         float: The calculated beta.
     """
-    # Calculate mean portfolio return
-    mean_security_return = np.mean(security_returns)
+    # Calculate percentage variation for security returns
+    pct_change_security_returns = rolling_variation(security_returns, 2)
 
-    # Calculate mean benchmark return
-    mean_benchmark_return = np.mean(benchmark_returns)
+    # Calculate percentage variation for benchmark returns
+    pct_change_benchmark_returns = rolling_variation(benchmark_returns, 2)
 
-    # Calculate standard deviation of portfolio returns
-    std_dev_security = np.std(security_returns)
+    # Calculate the covariance between security_returns and benchmark_returns
+    covariance = np.cov(pct_change_benchmark_returns,
+                        pct_change_security_returns)[0, 1]
 
-    # Calculate excess return of portfolio over benchmark
-    excess_return = mean_security_return - mean_benchmark_return
+    # Calculate the variance for benchmark_returns
+    variance = np.var(pct_change_benchmark_returns)
 
-    # Calculate Sharpe Ratio
-    compute_sharpe_ratio = excess_return / std_dev_security
-    # rounded_compute_sharpe_ratio = round(compute_sharpe_ratio, 2)
+    # Calculate beta metric
+    compute_beta = covariance / variance
 
-    return {
-        "beta": beta
-    }
+    return compute_beta
