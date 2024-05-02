@@ -1,21 +1,21 @@
-"""Module containing risk-adjusted return functions"""
-
+# Import packages
 from typing import List
 import numpy as np
+import pandas as pd
 
 
-def sharpe_ratio(security_returns: List[float], benchmark_returns: List[float]) -> dict:
+def beta(security_returns: List[float], benchmark_returns: List[float]) -> dict:
     """
-    Calculate the Sharpe Ratio of a security relative to a benchmark.
-    You can find the source here: Source: https://www.wallstreetmojo.com/risk-adjusted-returns/
-    Benchmark can be the risk-free rate returns or index returns
+    Calculate the beta of a security relative to a benchmark.
+    You can find the source here: Source: https://www.wallstreetmojo.com/beta-coefficient-calculate/
+    Benchmark can be a portfolio return or a index return
 
     Args:
         security_returns (List[float]): List of security returns.
         benchmark_returns (List[float]): List of benchmark returns.
 
     Returns:
-        float: The calculated Sharpe Ratio.
+        float: The calculated beta.
     """
     # Calculate mean portfolio return
     mean_security_return = np.mean(security_returns)
@@ -34,9 +34,5 @@ def sharpe_ratio(security_returns: List[float], benchmark_returns: List[float]) 
     # rounded_compute_sharpe_ratio = round(compute_sharpe_ratio, 2)
 
     return {
-        "mean_security_return": mean_security_return,
-        "mean_benchmark_return": mean_benchmark_return,
-        "std_dev_security": std_dev_security,
-        "excess_return": excess_return,
-        "compute_sharpe_ratio": compute_sharpe_ratio,
+        "beta": beta
     }
