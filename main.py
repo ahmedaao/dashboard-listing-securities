@@ -1,4 +1,4 @@
-from src import compute_risk_adjusted_return
+from src import compute_metric
 
 
 # Example usage:
@@ -7,5 +7,5 @@ benchmark_returns = [10, 8, 12, -20, -3, 9]
 risk_free_rate = [3, 1, -1, 5, 2.4, 8.5]
 
 
-a = compute_risk_adjusted_return.jensen_alpha(security_returns, benchmark_returns)
+a = compute_metric.sharpe_ratio(security_returns, benchmark_returns)
 print(a)
