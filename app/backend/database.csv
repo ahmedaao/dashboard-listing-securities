@@ -2,7 +2,7 @@
 1, "LU0131510165", "BourseDirect", "PEA","01/02/2024", "Buy", 1, 728.74
 2, "LU0131510165", "BourseDirect", "PEA","04/03/2024", "Buy", 1, 745.87
 3, "LU0131510165", "BourseDirect", "PEA","05/04/2024", "Buy", 1, 785.92
-4, "LU1964632324", "BourseDirect", "PEA","", "Buy", 1, # A completer
+4, "LU1964632324", "BourseDirect", "PEA","30/04/2024", "Buy", 1, 890.24
 5, "LU1832174962", "BourseDirect", "PEA-PME", "01/02/2024", "Buy", 5, 143.89
 6, "LU1832174962", "BourseDirect", "PEA-PME", "05/03/2024", "Buy", 5, 146.62
 7, "LU1832174962", "BourseDirect", "PEA-PME", "05/04/2024", "Buy", 4, 153.87
@@ -49,4 +49,13 @@
 48, "LU1832174962", "BourseDirect", "PEA-PME", "13/11/2023", "Buy", 1, 131.87
 49, "LU1832174962", "BourseDirect", "PEA-PME", "08/12/2023", "Buy", 4, 137.71
 50, "LU1832174962", "BourseDirect", "PEA-PME", "29/12/2023", "Buy", 5, 145.59
-
+51, "US0846707026", "TradeRepublic", "Investment account", "02/05/2024", "Buy", 0.802568, 373.80
+52, "US5705351048", "TradeRepublic", "Investment account", "02/05/2024", "Buy", 0.103448, 1450
+53, "US0846707026", "TradeRepublic", "Investment account", "09/05/2024", "Buy", 0.79344, 378.10
+54, "US5705351048", "TradeRepublic", "Investment account", "09/05/2024", "Buy", 0.099403, 1509
+55, "US0846707026", "TradeRepublic", "Investment account", "16/05/2024", "Buy", 0.78534, 382.00
+56, "US5705351048", "TradeRepublic", "Investment account", "16/05/2024", "Buy", 0.098749, 1519
+57, "US0846707026", "TradeRepublic", "Investment account", "23/05/2024", "Buy", 0.794176, 377.75
+58, "US5705351048", "TradeRepublic", "Investment account", "23/05/2024", "Buy", 0.099535, 1507
+59, "LU1832175001", "BourseDirect", "PEA-PME", "30/04/2024", "Buy", 4, 158.16
+60, "LU1832175001", "BourseDirect", "PEA-PME", "08/05/2024", "Buy", 4, 160.40
