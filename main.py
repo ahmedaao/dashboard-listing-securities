@@ -1,5 +1,6 @@
 from src.metric import compute_risk_adjusted_return
 from src.metric import compute_return
+import yfinance as yf
 
 
 # Example usage:
@@ -31,3 +32,13 @@ required_price = 5000000
 nb_years = 10
 a = compute_return.required_annualized_return(current_price, required_price, nb_years)
 # print(a)
+
+df = yf.download(["TSLA", "PEP"], period="5y", interval="1mo")
+
+close = df.Close
+# print(close)
+
+
+tsla = yf.Ticker("TSLA")
+history = tsla.history(start="2024-06-01")
+print(history.Open[1])

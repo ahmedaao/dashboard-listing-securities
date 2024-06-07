@@ -1,61 +1,65 @@
-"Order n°", "Isin", "Broker", "Account", "Date", "Order type", "Quantity", "Unit price"
-1, "LU0131510165", "BourseDirect", "PEA","01/02/2024", "Buy", 1, 728.74
-2, "LU0131510165", "BourseDirect", "PEA","04/03/2024", "Buy", 1, 745.87
-3, "LU0131510165", "BourseDirect", "PEA","05/04/2024", "Buy", 1, 785.92
-4, "LU1964632324", "BourseDirect", "PEA","30/04/2024", "Buy", 1, 890.24
-5, "LU1832174962", "BourseDirect", "PEA-PME", "01/02/2024", "Buy", 5, 143.89
-6, "LU1832174962", "BourseDirect", "PEA-PME", "05/03/2024", "Buy", 5, 146.62
-7, "LU1832174962", "BourseDirect", "PEA-PME", "05/04/2024", "Buy", 4, 153.87
-8, "LU1832175001", "BourseDirect", "PEA-PME", "09/04/2024", "Buy", 1, 159.32
-9, "US0846707026", "TradeRepublic", "Investment account", "16/11/2023", "Buy", 0.7562, 330.60
-10, "US0846707026", "TradeRepublic", "Investment account", "04/12/2023", "Buy", 0.76034, 328.80
-11, "US0846707026", "TradeRepublic", "Investment account", "18/12/2023", "Buy", 0.608642, 328.60
-12, "US0846707026", "TradeRepublic", "Investment account", "27/12/2023", "Buy", 0.62189, 321.60
-13, "US0846707026", "TradeRepublic", "Investment account", "02/01/2024", "Buy", 0.612745, 326.40
-14, "US0846707026", "TradeRepublic", "Investment account", "09/01/2024", "Buy", 0.898203, 334.00
-15, "US0846707026", "TradeRepublic", "Investment account", "16/01/2024", "Buy", 0.90036, 333.20
-16, "US0846707026", "TradeRepublic", "Investment account", "23/01/2024", "Buy", 0.882872, 339.80
-17, "US0846707026", "TradeRepublic", "Investment account", "02/02/2024", "Buy", 0.835654, 359.00
-18, "US5705351048", "TradeRepublic", "Investment account", "02/02/2024", "Buy", 0.11355, 1321.00
-19, "US0846707026", "TradeRepublic", "Investment account", "09/02/2024", "Buy", 0.813449, 368.80
-20, "US5705351048", "TradeRepublic", "Investment account", "09/02/2024", "Buy", 0.114068, 1315.00
-21, "US0846707026", "TradeRepublic", "Investment account", "16/02/2024", "Buy", 0.798296, 375.80
-22, "US5705351048", "TradeRepublic", "Investment account", "16/02/2024", "Buy", 0.10909, 1375.00
-23, "US0846707026", "TradeRepublic", "Investment account", "23/02/2024", "Buy", 0.772797, 388.20
-24, "US5705351048", "TradeRepublic", "Investment account", "23/02/2024", "Buy", 0.109409, 1371.00
-25, "US0846707026", "TradeRepublic", "Investment account", "04/03/2024", "Buy", 0.806885, 371.80
-26, "US5705351048", "TradeRepublic", "Investment account", "04/03/2024", "Buy", 0.109011, 1376.00
-27, "US0846707026", "TradeRepublic", "Investment account", "11/03/2024", "Buy", 0.81081, 370.00
-28, "US5705351048", "TradeRepublic", "Investment account", "11/03/2024", "Buy", 0.109489, 1370.00
-29, "US0846707026", "TradeRepublic", "Investment account", "18/03/2024", "Buy", 0.799573, 375.20
-30, "US5705351048", "TradeRepublic", "Investment account", "18/03/2024", "Buy", 0.107142, 1400.00
-31, "US0846707026", "TradeRepublic", "Investment account", "25/03/2024", "Buy", 0.792811, 378.40
-32, "US5705351048", "TradeRepublic", "Investment account", "25/03/2024", "Buy", 0.106307, 1411.00
-33, "US0846707026", "TradeRepublic", "Investment account", "02/04/2024", "Buy", 0.770218, 389.50
-34, "US5705351048", "TradeRepublic", "Investment account", "02/04/2024", "Buy", 0.10699, 1402.00
-35, "US0846707026", "TradeRepublic", "Investment account", "09/04/2024", "Buy", 0.783903, 382.70
-36, "US5705351048", "TradeRepublic", "Investment account", "09/04/2024", "Buy", 0.109489, 1370.00
-37, "US0846707026", "TradeRepublic", "Investment account", "16/04/2024", "Buy", 0.799147, 375.40
-38, "US5705351048", "TradeRepublic", "Investment account", "16/04/2024", "Buy", 0.111607, 1344.00
-39, "US0846707026", "TradeRepublic", "Investment account", "23/04/2024", "Buy", 0.786885, 381.25
-40, "US5705351048", "TradeRepublic", "Investment account", "23/04/2024", "Buy", 0.108459, 1383.00
-41, "LU0131510165", "BourseDirect", "PEA", "16/10/2023", "Buy", 2, 652.06
-42, "LU0131510165", "BourseDirect", "PEA", "24/10/2023", "Buy", 1, 626.81
-43, "LU0131510165", "BourseDirect", "PEA", "13/11/2023", "Buy", 1, 660.20
-44, "LU0131510165", "BourseDirect", "PEA", "08/12/2023", "Buy", 1, 690.96
-45, "LU0131510165", "BourseDirect", "PEA", "29/12/2023", "Buy", 1, 734.40
-46, "LU1832174962", "BourseDirect", "PEA-PME", "16/10/2023", "Buy", 15, 130.30
-47, "LU1832174962", "BourseDirect", "PEA-PME", "24/10/2023", "Buy", 1, 126.95
-48, "LU1832174962", "BourseDirect", "PEA-PME", "13/11/2023", "Buy", 1, 131.87
-49, "LU1832174962", "BourseDirect", "PEA-PME", "08/12/2023", "Buy", 4, 137.71
-50, "LU1832174962", "BourseDirect", "PEA-PME", "29/12/2023", "Buy", 5, 145.59
-51, "US0846707026", "TradeRepublic", "Investment account", "02/05/2024", "Buy", 0.802568, 373.80
-52, "US5705351048", "TradeRepublic", "Investment account", "02/05/2024", "Buy", 0.103448, 1450
-53, "US0846707026", "TradeRepublic", "Investment account", "09/05/2024", "Buy", 0.79344, 378.10
-54, "US5705351048", "TradeRepublic", "Investment account", "09/05/2024", "Buy", 0.099403, 1509
-55, "US0846707026", "TradeRepublic", "Investment account", "16/05/2024", "Buy", 0.78534, 382.00
-56, "US5705351048", "TradeRepublic", "Investment account", "16/05/2024", "Buy", 0.098749, 1519
-57, "US0846707026", "TradeRepublic", "Investment account", "23/05/2024", "Buy", 0.794176, 377.75
-58, "US5705351048", "TradeRepublic", "Investment account", "23/05/2024", "Buy", 0.099535, 1507
-59, "LU1832175001", "BourseDirect", "PEA-PME", "30/04/2024", "Buy", 4, 158.16
-60, "LU1832175001", "BourseDirect", "PEA-PME", "08/05/2024", "Buy", 4, 160.40
+Order n°,Isin,Broker,Account,Date,Order_type,Quantity,Unit_price
+1,LU0131510165,BourseDirect,PEA,01/02/2024,1,1.0,728.74
+2,LU0131510165,BourseDirect,PEA,04/03/2024,1,1.0,745.87
+3,LU0131510165,BourseDirect,PEA,05/04/2024,1,1.0,785.92
+4,LU1964632324,BourseDirect,PEA,30/04/2024,1,1.0,890.24
+5,LU1832174962,BourseDirect,PEA-PME,01/02/2024,1,5.0,143.89
+6,LU1832174962,BourseDirect,PEA-PME,05/03/2024,1,5.0,146.62
+7,LU1832174962,BourseDirect,PEA-PME,05/04/2024,1,4.0,153.87
+8,LU1832175001,BourseDirect,PEA-PME,09/04/2024,1,1.0,159.32
+9,US0846707026,TradeRepublic,CTO,16/11/2023,1,0.7562,330.6
+10,US0846707026,TradeRepublic,CTO,04/12/2023,1,0.76034,328.8
+11,US0846707026,TradeRepublic,CTO,18/12/2023,1,0.608642,328.6
+12,US0846707026,TradeRepublic,CTO,27/12/2023,1,0.62189,321.6
+13,US0846707026,TradeRepublic,CTO,02/01/2024,1,0.612745,326.4
+14,US0846707026,TradeRepublic,CTO,09/01/2024,1,0.898203,334.0
+15,US0846707026,TradeRepublic,CTO,16/01/2024,1,0.90036,333.2
+16,US0846707026,TradeRepublic,CTO,23/01/2024,1,0.882872,339.8
+17,US0846707026,TradeRepublic,CTO,02/02/2024,1,0.835654,359.0
+18,US5705351048,TradeRepublic,CTO,02/02/2024,1,0.11355,1321.0
+19,US0846707026,TradeRepublic,CTO,09/02/2024,1,0.813449,368.8
+20,US5705351048,TradeRepublic,CTO,09/02/2024,1,0.114068,1315.0
+21,US0846707026,TradeRepublic,CTO,16/02/2024,1,0.798296,375.8
+22,US5705351048,TradeRepublic,CTO,16/02/2024,1,0.10909,1375.0
+23,US0846707026,TradeRepublic,CTO,23/02/2024,1,0.772797,388.2
+24,US5705351048,TradeRepublic,CTO,23/02/2024,1,0.109409,1371.0
+25,US0846707026,TradeRepublic,CTO,04/03/2024,1,0.806885,371.8
+26,US5705351048,TradeRepublic,CTO,04/03/2024,1,0.109011,1376.0
+27,US0846707026,TradeRepublic,CTO,11/03/2024,1,0.81081,370.0
+28,US5705351048,TradeRepublic,CTO,11/03/2024,1,0.109489,1370.0
+29,US0846707026,TradeRepublic,CTO,18/03/2024,1,0.799573,375.2
+30,US5705351048,TradeRepublic,CTO,18/03/2024,1,0.107142,1400.0
+31,US0846707026,TradeRepublic,CTO,25/03/2024,1,0.792811,378.4
+32,US5705351048,TradeRepublic,CTO,25/03/2024,1,0.106307,1411.0
+33,US0846707026,TradeRepublic,CTO,02/04/2024,1,0.770218,389.5
+34,US5705351048,TradeRepublic,CTO,02/04/2024,1,0.10699,1402.0
+35,US0846707026,TradeRepublic,CTO,09/04/2024,1,0.783903,382.7
+36,US5705351048,TradeRepublic,CTO,09/04/2024,1,0.109489,1370.0
+37,US0846707026,TradeRepublic,CTO,16/04/2024,1,0.799147,375.4
+38,US5705351048,TradeRepublic,CTO,16/04/2024,1,0.111607,1344.0
+39,US0846707026,TradeRepublic,CTO,23/04/2024,1,0.786885,381.25
+40,US5705351048,TradeRepublic,CTO,23/04/2024,1,0.108459,1383.0
+41,LU0131510165,BourseDirect,PEA,16/10/2023,1,2.0,652.06
+42,LU0131510165,BourseDirect,PEA,24/10/2023,1,1.0,626.81
+43,LU0131510165,BourseDirect,PEA,13/11/2023,1,1.0,660.2
+44,LU0131510165,BourseDirect,PEA,08/12/2023,1,1.0,690.96
+45,LU0131510165,BourseDirect,PEA,29/12/2023,1,1.0,734.4
+46,LU1832174962,BourseDirect,PEA-PME,16/10/2023,1,15.0,130.3
+47,LU1832174962,BourseDirect,PEA-PME,24/10/2023,1,1.0,126.95
+48,LU1832174962,BourseDirect,PEA-PME,13/11/2023,1,1.0,131.87
+49,LU1832174962,BourseDirect,PEA-PME,08/12/2023,1,4.0,137.71
+50,LU1832174962,BourseDirect,PEA-PME,29/12/2023,1,5.0,145.59
+51,US0846707026,TradeRepublic,CTO,02/05/2024,1,0.802568,373.8
+52,US5705351048,TradeRepublic,CTO,02/05/2024,1,0.103448,1450.0
+53,US0846707026,TradeRepublic,CTO,09/05/2024,1,0.79344,378.1
+54,US5705351048,TradeRepublic,CTO,09/05/2024,1,0.099403,1509.0
+55,US0846707026,TradeRepublic,CTO,16/05/2024,1,0.78534,382.0
+56,US5705351048,TradeRepublic,CTO,16/05/2024,1,0.098749,1519.0
+57,US0846707026,TradeRepublic,CTO,23/05/2024,1,0.794176,377.75
+58,US5705351048,TradeRepublic,CTO,23/05/2024,1,0.099535,1507.0
+59,LU1832175001,BourseDirect,PEA-PME,30/04/2024,1,4.0,158.16
+60,LU1832175001,BourseDirect,PEA-PME,08/05/2024,1,4.0,160.4
+61,US0846707026,TradeRepublic,CTO,03/06/2024,1,0.793965,377.85
+62,US0846707026,TradeRepublic,CTO,10/06/2024,1,0.780335,384.45
+63,US5705351048,TradeRepublic,CTO,03/06/2024,1,0.1002,1497.0
+64,US5705351048,TradeRepublic,CTO,10/06/2024,1,0.101557,1477.0
