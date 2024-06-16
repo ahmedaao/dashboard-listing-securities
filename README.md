@@ -35,6 +35,7 @@ This project was built using the following technologies:
 
 3. Backend:
     - csv # TODO: Update with a database server
+    - SQLite
 
 3. Other tools:
     - Git
@@ -42,6 +43,11 @@ This project was built using the following technologies:
     - Visual Studio
 
 ## Architecture
+
+1 - DataBase (Logical Data Model)
+![Logical Data Model](./reports/figures/database/mld.png)
+
+2 - Application
 
 ## Features
 
