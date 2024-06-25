@@ -9,7 +9,7 @@ def create_from_csv(csv_file: str, database_file: str):
     Create a SQLite database and populate it with data from a CSV file.
 
     This function reads data from a specified CSV file and inserts it into
-    a SQLite database. It creates five tables: account, broker, order, security,
+    a SQLite database. It creates five tables: account, broker, order, isin,
     and transaction. The transaction table uses foreign keys that reference the
     other tables.
 
@@ -59,7 +59,7 @@ def create_from_csv(csv_file: str, database_file: str):
 
     cursor.execute(
         """
-        CREATE TABLE IF NOT EXISTS "security" (
+        CREATE TABLE IF NOT EXISTS "isin" (
             id INTEGER PRIMARY KEY,
             isin TEXT,
             name TEXT,
@@ -79,7 +79,7 @@ def create_from_csv(csv_file: str, database_file: str):
             date TEXT,
             quantity REAL,
             unitPrice REAL,
-            FOREIGN KEY (isinId) REFERENCES security (id),
+            FOREIGN KEY (isinId) REFERENCES isin (id),
             FOREIGN KEY (brokerId) REFERENCES broker (id),
             FOREIGN KEY (accountId) REFERENCES account (id),
             FOREIGN KEY (orderId) REFERENCES "order" (id)
@@ -87,7 +87,7 @@ def create_from_csv(csv_file: str, database_file: str):
     """
     )
 
-    # Insert fixed data into account, broker, order, and security tables
+    # Insert fixed data into account, broker, order, and isin tables
     cursor.execute(
         """
         INSERT OR IGNORE INTO "account" (id, number, name) VALUES
@@ -115,7 +115,7 @@ def create_from_csv(csv_file: str, database_file: str):
 
     cursor.execute(
         """
-        INSERT OR IGNORE INTO "security" (id, isin, name, type) VALUES
+        INSERT OR IGNORE INTO "isin" (id, isin, name, type) VALUES
         (1, 'LU0131510165', 'Independance et Expansion France Small A', 'OPVCM'),
         (2, 'LU1964632324', 'Independance et Expansion France Small I', 'OPVCM'),
         (3, 'LU1832174962', 'Independance et Expansion Europe Small A', 'OPVCM'),
