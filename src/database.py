@@ -121,7 +121,7 @@ def create_from_csv(csv_file: str, database_file: str):
         (3, 'LU1832174962', 'Independance et Expansion Europe Small A', 'OPVCM'),
         (4, 'LU1832175001', 'Independance et Expansion Europe Small I', 'OPVCM'),
         (5, 'US0846707026', 'Berkshire Hathaway Inc.', 'STOCK'),
-        (6, 'LU1832175001', 'Markel Group Inc.', 'STOCK')
+        (6, 'US5705351048', 'Markel Group Inc.', 'STOCK')
     """
     )
 
