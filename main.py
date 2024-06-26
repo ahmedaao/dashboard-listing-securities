@@ -1,7 +1,10 @@
 from src.metric import compute_risk_adjusted_return
 from src.metric import compute_return
 import yfinance as yf
+from config import ROOT_DIR
 
+
+print(ROOT_DIR)
 
 # Example usage:
 security_returns = [12.5, 5.1, 15.2, -24.25, -5.85, 10]

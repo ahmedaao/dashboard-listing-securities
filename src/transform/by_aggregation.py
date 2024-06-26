@@ -2,7 +2,7 @@
 import pandas as pd
 
 
-def sum_by_attribute(attribute: str, dict_attribute: dict) -> dict:
+def sum_by_attribute(attribute: str, data: dict) -> dict:
     """
     Group a dictionary by a specified attribute and sum the 'quantity' for each group.
 
@@ -16,7 +16,7 @@ def sum_by_attribute(attribute: str, dict_attribute: dict) -> dict:
           and the values are the sum of the 'quantity' for each group.
     """
     # Convert the dictionary to a pandas DataFrame
-    df_attribute = pd.DataFrame(dict_attribute)
+    df_attribute = pd.DataFrame(data)
     # Group the DataFrame by the specified attribute and sum the 'quantity' for each group
     groupby_attribute = df_attribute.groupby(attribute)['quantity'].sum().reset_index()
     # Convert the resulting DataFrame back to a dictionary with lists as values
