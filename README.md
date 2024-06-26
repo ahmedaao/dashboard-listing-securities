@@ -49,6 +49,20 @@ This project was built using the following technologies:
 
 2 - Application
 
+## Run the app
+
+### Streamlit and FastAPI manually
+
+1. FastAPI
+    Go to the root of the repository, then enter: 
+    '''sh
+    uvicorn app.middleware.fastapi_app:app --host 0.0.0.0 --port 8000 --reload
+    '''
+    Now, you can reach the swagger of FastAPI at 127.0.0.1:8000/docs
+
+2. Streamlit
+
+
 ## Features
 
 1. Compute risk-adjusted return:
@@ -95,3 +109,8 @@ Feel free to contribute and make this project even better!
 ## License
 
 This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt), making it open for collaboration and use in various projects.
+
+
+## List To Do
+
+1. 

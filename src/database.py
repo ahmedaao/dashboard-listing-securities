@@ -17,7 +17,7 @@ def create_from_csv(csv_file: str, database_file: str):
     csv_file (str): The path to the CSV file containing the transaction data.
 
     The CSV file should have the following columns:
-    id, isinId, brokerId, accountId, date, orderId, quantity, unitPrice
+    id, isinId, brokerId, accountId, date, orderId, quantity, unit_price
     """
 
     # Read the CSV file
@@ -78,7 +78,7 @@ def create_from_csv(csv_file: str, database_file: str):
             orderId INTEGER,
             date TEXT,
             quantity REAL,
-            unitPrice REAL,
+            unit_price REAL,
             FOREIGN KEY (isinId) REFERENCES isin (id),
             FOREIGN KEY (brokerId) REFERENCES broker (id),
             FOREIGN KEY (accountId) REFERENCES account (id),
@@ -108,8 +108,8 @@ def create_from_csv(csv_file: str, database_file: str):
     cursor.execute(
         """
         INSERT OR IGNORE INTO "order" (id, type) VALUES
-        (1, 'SELL'),
-        (2, 'BUY')
+        (1, 'BUY'),
+        (2, 'SELL')
     """
     )
 
@@ -129,7 +129,7 @@ def create_from_csv(csv_file: str, database_file: str):
     for row in df.itertuples(index=False):
         cursor.execute(
             """
-            INSERT INTO "transaction" (id, isinId, brokerId, accountId, orderId, date, quantity, unitPrice)
+            INSERT INTO "transaction" (id, isinId, brokerId, accountId, orderId, date, quantity, unit_price)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
             (
@@ -140,7 +140,7 @@ def create_from_csv(csv_file: str, database_file: str):
                 row.orderId,
                 row.date,
                 row.quantity,
-                row.unitPrice,
+                row.unit_price,
             ),
         )
 

@@ -1,4 +1,5 @@
 """Load environmlent variables from .env"""
+
 import os
 from dotenv import load_dotenv
 
@@ -7,4 +8,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Access environment variables
-ROOT_DIR = os.getenv('ROOT_DIR')
+ROOT_DIR = os.getenv("ROOT_DIR")
+DB_FILE = os.getenv("DB_FILE")

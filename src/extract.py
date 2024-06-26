@@ -1,10 +1,14 @@
-"""This module contains functions which extract data from sqlite database.db"""
+"""This module contains functions which extract data from sqlite database.db
+and third parties sources"""
+
 import sqlite3
 from sqlite3 import Error
+import yfinance as yf
 
 
+# Functions to extract data from sqlite database.db
 def connection_to(db_file: str):
-    """ Create a connection to the SQLite database specified by db_file. """
+    """Create a connection to the SQLite database specified by db_file."""
     try:
         conn = sqlite3.connect(db_file)
         print(f"Successfully connected to {db_file}")
@@ -20,7 +24,7 @@ def by_attribute(db_file: str, attribute: str) -> dict:
 
     :param db_file (str): Path to the SQLite database file
     :param attribute (str): Name of the attribute to extract
-    :return: Dictionary with key=(date, quantity, unitPrice) and values of the specified attribute in list form
+    :return: Dictionary with key=(date, quantity, unit_price) and values of the specified attribute in list form
     """
     conn = connection_to(db_file)
     if conn is None:
@@ -40,15 +44,15 @@ def by_attribute(db_file: str, attribute: str) -> dict:
             "isinId": "isin, name, type",
             "brokerId": "name, country",
             "accountId": "number, name",
-            "orderId": "id, type"
+            "orderId": "id, type",
         }
 
         if attribute in joins and attribute in columns:
             query = (
                 f"SELECT 'transaction'.date, "
                 f"{columns[attribute]}, "
-                f"'transaction'.quantity, 'transaction'.unitPrice, "
-                f"('transaction'.quantity * 'transaction'.unitPrice) AS total "
+                f"'transaction'.quantity, 'transaction'.unit_price, "
+                f"('transaction'.quantity * 'transaction'.unit_price) AS cost_price "
                 f"FROM 'transaction' "
                 f"{joins[attribute]};"
             )
@@ -60,7 +64,11 @@ def by_attribute(db_file: str, attribute: str) -> dict:
         rows = cursor.fetchall()
 
         # Define the keys for the dictionary using original attribute names
-        keys = ['date'] + [col.split(' ')[-1] for col in columns[attribute].split(', ')] + ['quantity', 'unitPrice', 'total']
+        keys = (
+            ["date"]
+            + [col.split(" ")[-1] for col in columns[attribute].split(", ")]
+            + ["quantity", "unit_price", "cost_price"]
+        )
 
         # Initialize the result dictionary with empty lists
         result = {key: [] for key in keys}
@@ -101,8 +109,8 @@ def all_attributes(db_file: str) -> dict:
             broker.name, broker.country,
             account.number, account.name,
             'order'.type,
-            'transaction'.quantity, 'transaction'.unitPrice,
-            ('transaction'.quantity * 'transaction'.unitPrice) AS total
+            'transaction'.quantity, 'transaction'.unit_price,
+            ('transaction'.quantity * 'transaction'.unit_price) AS cost_price
         FROM
             'transaction'
         JOIN isin ON 'transaction'.isinId = isin.id
@@ -116,13 +124,18 @@ def all_attributes(db_file: str) -> dict:
 
         # Define the keys for the dictionary using original attribute names
         keys = [
-            'date',
-            'isin', 'isin_name', 'isin_type',
-            'broker_name', 'broker_country',
-            'account_number', 'account_name',
-            'order_type',
-            'quantity', 'unitPrice',
-            'total'
+            "date",
+            "isin",
+            "isin_name",
+            "isin_type",
+            "broker_name",
+            "broker_country",
+            "account_number",
+            "account_name",
+            "order_type",
+            "quantity",
+            "unit_price",
+            "cost_price",
         ]
 
         # Initialize the result dictionary with empty lists
@@ -140,3 +153,9 @@ def all_attributes(db_file: str) -> dict:
     finally:
         if conn:
             conn.close()
+
+
+# Functions to extract data from yfinance
+def current_price(isin):
+    stock = yf.Ticker(isin)
+    return stock.history(period="1d")['Close'][0]
