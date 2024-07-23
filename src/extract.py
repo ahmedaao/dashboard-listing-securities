@@ -49,10 +49,10 @@ def by_attribute(db_file: str, attribute: str) -> dict:
 
         if attribute in joins and attribute in columns:
             query = (
-                f"SELECT 'transaction'.date, "
+                f"SELECT 'transaction'.transaction_date, "
                 f"{columns[attribute]}, "
                 f"'transaction'.quantity, 'transaction'.unit_price, "
-                f"('transaction'.quantity * 'transaction'.unit_price) AS cost_price "
+                f"('transaction'.quantity * 'transaction'.unit_price) AS transaction_price "
                 f"FROM 'transaction' "
                 f"{joins[attribute]};"
             )
@@ -65,9 +65,9 @@ def by_attribute(db_file: str, attribute: str) -> dict:
 
         # Define the keys for the dictionary using original attribute names
         keys = (
-            ["date"]
+            ["transaction_date"]
             + [col.split(" ")[-1] for col in columns[attribute].split(", ")]
-            + ["quantity", "unit_price", "cost_price"]
+            + ["quantity", "unit_price", "transaction_price"]
         )
 
         # Initialize the result dictionary with empty lists
@@ -87,7 +87,7 @@ def by_attribute(db_file: str, attribute: str) -> dict:
             conn.close()
 
 
-def all_attributes(db_file: str) -> dict:
+def all_attribute(db_file: str) -> dict:
     """
     Connect to the SQLite database and merge all specified tables into a single result set.
 
@@ -104,13 +104,13 @@ def all_attributes(db_file: str) -> dict:
         # Define the SQL query to join all tables
         query = """
         SELECT
-            'transaction'.date,
+            'transaction'.transaction_date,
             isin.isin, isin.name, isin.type,
             broker.name, broker.country,
             account.number, account.name,
             'order'.type,
             'transaction'.quantity, 'transaction'.unit_price,
-            ('transaction'.quantity * 'transaction'.unit_price) AS cost_price
+            ('transaction'.quantity * 'transaction'.unit_price) AS transaction_price
         FROM
             'transaction'
         JOIN isin ON 'transaction'.isinId = isin.id
@@ -124,7 +124,7 @@ def all_attributes(db_file: str) -> dict:
 
         # Define the keys for the dictionary using original attribute names
         keys = [
-            "date",
+            "transaction_date",
             "isin",
             "isin_name",
             "isin_type",
@@ -135,7 +135,7 @@ def all_attributes(db_file: str) -> dict:
             "order_type",
             "quantity",
             "unit_price",
-            "cost_price",
+            "transaction_price",
         ]
 
         # Initialize the result dictionary with empty lists
@@ -153,9 +153,3 @@ def all_attributes(db_file: str) -> dict:
     finally:
         if conn:
             conn.close()
-
-
-# Functions to extract data from yfinance
-def current_price(isin):
-    stock = yf.Ticker(isin)
-    return stock.history(period="1d")['Close'][0]

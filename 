@@ -1,0 +1,21 @@
+[33m0e52513[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Added function last_price for module by_adding_attribute.py
+[33mca44580[m Added function sum_by_attribute for the module by_aggregation.py
+[33mff97506[m Added config.py file
+[33m8ad89b5[m Added module extract.from_db.py with function by_attribute
+[33me9e352e[m Added LOgical Data Model to README.md
+[33me416256[m Added module database.py
+[33m92eca65[m Added MCD figure for the database
+[33m7450801[m Refactored database.csv file
+[33m6a2469e[m Added notebook for EDA
+[33m8c4fd30[m Added module compute return
+[33mb17a2e1[m Refactored module files
+[33m2bb5b0a[m Added function to compute Treynor ratio
+[33mbcc09e5[m Added function to compute beta metric
+[33m8651530[m Added function to compute rolling variation
+[33mc001562[m Added function to compute Sharpe ratio
+[33m0ccf73d[m Added database.csv
+[33m8794056[m Refactored folder tree
+[33medeae38[m Added backend app fastapi
+[33mc157656[m Added setup.py and src folder for python modules
+[33me96e593[m Added README.md
+[33m3da0c76[m Initial commit

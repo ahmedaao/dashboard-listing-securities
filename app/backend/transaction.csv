@@ -1,4 +1,4 @@
-id,isinId,brokerId,accountId,date,orderId,quantity,unit_price
+id,isinId,brokerId,accountId,transaction_date,orderId,quantity,unit_price
 1,1,1,1,2023-10-16,1,2.0,652.06
 2,3,1,2,2023-10-16,1,15.0,130.3
 3,3,1,2,2023-10-24,1,1.0,126.95
@@ -76,3 +76,5 @@ id,isinId,brokerId,accountId,date,orderId,quantity,unit_price
 75,6,2,3,2024-07-09,1,0.138312,1446.0
 76,5,2,3,2024-07-16,1,0.124007,403.20
 77,6,2,3,2024-07-16,1,0.135043,1481.0
+78,5,2,3,2024-07-23,1,0.124254,402.40
+79,6,2,3,2024-07-23,1,0.128888,1440.0

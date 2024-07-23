@@ -75,8 +75,8 @@ def create_from_csv(csv_file: str, database_file: str):
             isinId INTEGER,
             brokerId INTEGER,
             accountId INTEGER,
+            transaction_date TEXT,
             orderId INTEGER,
-            date TEXT,
             quantity REAL,
             unit_price REAL,
             FOREIGN KEY (isinId) REFERENCES isin (id),
@@ -129,7 +129,7 @@ def create_from_csv(csv_file: str, database_file: str):
     for row in df.itertuples(index=False):
         cursor.execute(
             """
-            INSERT INTO "transaction" (id, isinId, brokerId, accountId, orderId, date, quantity, unit_price)
+            INSERT INTO "transaction" (id, isinId, brokerId, accountId, transaction_date, orderId, quantity, unit_price)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
             (
@@ -137,8 +137,8 @@ def create_from_csv(csv_file: str, database_file: str):
                 row.isinId,
                 row.brokerId,
                 row.accountId,
+                row.transaction_date,
                 row.orderId,
-                row.date,
                 row.quantity,
                 row.unit_price,
             ),

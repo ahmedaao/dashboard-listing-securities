@@ -1,4 +1,4 @@
-id,isinId,brokerId,accountId,date,orderId,quantity,unitPrice,total
+id,isinId,brokerId,accountId,transaction_date,orderId,quantity,unitPrice,total
 1,LU0131510165,BourseDirect,PEA,2023-10-16,1,2.0,652.06,1304.12
 2,LU1832174962,BourseDirect,PEA-PME,2023-10-16,1,15.0,130.3,1954.5000000000002
 3,LU1832174962,BourseDirect,PEA-PME,2023-10-24,1,1.0,126.95,126.95
