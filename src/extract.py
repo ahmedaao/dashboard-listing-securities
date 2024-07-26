@@ -52,7 +52,7 @@ def by_attribute(db_file: str, attribute: str) -> dict:
                 f"SELECT 'transaction'.transaction_date, "
                 f"{columns[attribute]}, "
                 f"'transaction'.quantity, 'transaction'.unit_price, "
-                f"('transaction'.quantity * 'transaction'.unit_price) AS transaction_price "
+                f"('transaction'.quantity * 'transaction'.unit_price) AS total_price "
                 f"FROM 'transaction' "
                 f"{joins[attribute]};"
             )
@@ -67,7 +67,7 @@ def by_attribute(db_file: str, attribute: str) -> dict:
         keys = (
             ["transaction_date"]
             + [col.split(" ")[-1] for col in columns[attribute].split(", ")]
-            + ["quantity", "unit_price", "transaction_price"]
+            + ["quantity", "unit_price", "total_price"]
         )
 
         # Initialize the result dictionary with empty lists
@@ -110,7 +110,7 @@ def all_attribute(db_file: str) -> dict:
             account.number, account.name,
             'order'.type,
             'transaction'.quantity, 'transaction'.unit_price,
-            ('transaction'.quantity * 'transaction'.unit_price) AS transaction_price
+            ('transaction'.quantity * 'transaction'.unit_price) AS total_price
         FROM
             'transaction'
         JOIN isin ON 'transaction'.isinId = isin.id
@@ -135,7 +135,7 @@ def all_attribute(db_file: str) -> dict:
             "order_type",
             "quantity",
             "unit_price",
-            "transaction_price",
+            "total_price",
         ]
 
         # Initialize the result dictionary with empty lists

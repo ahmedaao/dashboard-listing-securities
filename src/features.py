@@ -11,6 +11,6 @@ def add_column_total(df: pd.DataFrame) -> pd.DataFrame:
         df (pandas.DataFrame): The DataFrame containing the data.
     """
     # Feature1: Total amount for a transaction
-    df["total"] = df["quantity"] * df["unitPrice"]
+    df["total_price"] = df["quantity"] * df["unitPrice"]
 
     return df
